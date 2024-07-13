@@ -412,3 +412,51 @@ def student_info(*args, **kwargs):
 
 
 student_info('Math', 'Arts', name='Meet', age='20')
+
+# Exception Handling
+try:
+    result = 10 / 0  # This will raise a ZeroDivisionError
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+else:
+    print("Division successful!")
+finally:
+    print("Execution complete.")
+
+# Handling specific exceptions
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+else:
+    print(f"Your number is: {num}")
+finally:
+    print("Input handling complete.")
+
+# File Operations
+# Writing to a file
+with open('sample.txt', 'w') as file:
+    file.write("Hello, this is a sample file.\n")
+    file.write("Writing some more lines.")
+
+# Reading from a file
+with open('sample.txt', 'r') as file:
+    contents = file.read()
+    print(contents)
+
+# Appending to a file
+with open('sample.txt', 'a') as file:
+    file.write("\nAppending a new line to the file.")
+
+# Reading line by line
+with open('sample.txt', 'r') as file:
+    lines = file.readlines()
+    for line in lines:
+        print(line.strip())  # strip() removes any extra newline characters
+
+# Handling file not found error
+try:
+    with open('nonexistent_file.txt', 'r') as file:
+        content = file.read()
+except FileNotFoundError:
+    print("File not found!")
