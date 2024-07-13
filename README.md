@@ -218,4 +218,7 @@
 - **Introduction to Model Deployment:** [Towards Data Science](https://towardsdatascience.com/model-deployment-strategies-b9084c6ac85e)
 - **Deploying Machine Learning Models:** [Towards Data Science](https://towardsdatascience.com/deploying-machine-learning-models-a-comprehensive-guide-62a2d8a318e0)
 
+### Extra Material
+- **Kaggle Microcourses:** [Kaggle Learn](https://www.kaggle.com/learn)
+- **Advanced Plotly Notebook:** [Kaggle NoteBook](https://www.kaggle.com/code/sercanyesiloz/plotly-tutorial/notebook)
 ---
